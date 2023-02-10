@@ -1,0 +1,53 @@
+ALGORITHM solution1
+VAR
+  tab1 : ARRAY_OF INTEGER[];
+    tab2 : ARRAY_OF INTEGER[];
+    i,j,sum,sum1,sum2:INTEGER
+
+BEGIN
+  write("donner moi un nombre")
+  read("lire tableau",tab1)
+   for (i=0; i <tab1[]; i++) THEN{
+    for (j=0 ; j< tab2[] ; j++) THEN{
+        tab1[i]!=tab2[j]
+
+    }
+     sum1=sum1+tab1[i]
+   }
+END_IF
+END_FOR
+for (j=0; j<tab2[]; j++) THEN{
+    for (i=0 ; i< tab2[] ; i++) THEN{
+        tab1[j]!=tab2[i]
+
+    }
+     sum2=sum2+tab2[j]
+   }
+END_IF
+END_FOR
+ sum=sum1+sum2
+ write("la somme des elements distincts:", sum )
+
+
+
+
+ALGORITHM solution2
+VAR
+  tab1 : ARRAY_OF INTEGER[];
+    tab2 : ARRAY_OF INTEGER[];
+    i,j,sum,sum1:INTEGER
+
+BEGIN
+  write("donner moi un nombre")
+  read("lire tableau",tab1)
+   for (i=0; i <tab1[]; i++) THEN{
+    for (j=0 ; j< tab2[] ; j++) THEN{
+        tab1[i]=tab2[j]
+
+    }
+     sum=sum+tab1[i]
+   }
+END_IF
+END_FOR
+ sum1=sum*2
+ write("la somme des element du tableau est: ", sum1)
